@@ -144,7 +144,7 @@ const Home = () => {
     <div className="user_container">
         
        {Users.map((user)=>(
-        <div className="boxes">
+        <div className="boxes" key={Math.random()}>
             <h1>{user.name}</h1>
             <h2>{user.email}</h2>
             <h2>{user.age}</h2>

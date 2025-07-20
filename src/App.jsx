@@ -3,7 +3,7 @@ import Home from "../src/components/Home.jsx"
 const App = () => {
   return (
     <>
-    <Home />
+    <Home name={"Alen James"} age={23} />
     
     </>
   )

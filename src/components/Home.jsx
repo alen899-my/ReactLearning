@@ -134,7 +134,7 @@ const Users=[
     }
   },
 ];
-const Home = () => {
+const Home = (props) => {
 
   return (
     <>
@@ -154,7 +154,18 @@ const Home = () => {
         </div>
        )
     )}
-    </div> </>
+    </div>
+    <div className="user_container">
+        <h1 className='heading' >I learned props</h1>
+        <p className='para'>props are used to pass data from parent to child component</p>
+        <div className="boxes">
+               <h2>name:{props.name}</h2>
+        <h2>age:{props.age}</h2>
+        </div>
+     
+        
+    </div>
+     </>
   )
 }
 

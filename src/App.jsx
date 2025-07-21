@@ -1,5 +1,8 @@
 import React from 'react'
+import State from './components/State.jsx'
 import Home from "../src/components/Home.jsx"
+import Comp2 from './components/Comp2.jsx'
+import Todo from "./components/Todo.jsx"
 const ValidPassword=()=><h1 >IT is valid password</h1>
 const InvalidPassword=()=><h1>IT is Invalid password</h1>
 const Password=({isValid})=>{
@@ -25,12 +28,22 @@ const Cart=()=>{
   )
 }
 
+const ButtonComp=()=>{
+  const BtnSubmit=()=>console.log("clicked")
+  return (
+    <button onClick={BtnSubmit}>click me</button>
+  )
+}
 const App = () => {
   return (
     <>
     <Home name={"Alen James"} age={23} />
     <Password isValid={true}/>
     <Cart />
+    <ButtonComp/>
+    <State/>
+    <Comp2/>
+    <Todo/>
     </>
   )
 }
